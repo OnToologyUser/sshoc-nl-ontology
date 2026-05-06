@@ -1,0 +1,859 @@
+{
+  "@context" : {
+    "ResearchProject" : {
+      "@id" : "https://schema.org/ResearchProject"
+    },
+    "WebAPI" : {
+      "@id" : "https://schema.org/WebAPI"
+    },
+    "abstract" : {
+      "@id" : "http://purl.org/ontology/bibo/abstract",
+      "@type" : "@id"
+    },
+    "MultiVolumeBook" : {
+      "@id" : "http://purl.org/ontology/bibo/MultiVolumeBook"
+    },
+    "e706ce12f9f6d26a61d0e2effa81f" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/870e706ce12f9f6d26a61d0e2effa81f"
+    },
+    "CategoricalDataType" : {
+      "@id" : "https://w3id.org/dsv-ontology#CategoricalDataType"
+    },
+    "e802100a8ff91ab84e96589e9b49f1d" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/5e802100a8ff91ab84e96589e9b49f1d"
+    },
+    "object" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#object"
+    },
+    "StatisticalDataType" : {
+      "@id" : "https://w3id.org/dsv-ontology#StatisticalDataType"
+    },
+    "Magazine" : {
+      "@id" : "http://purl.org/ontology/bibo/Magazine"
+    },
+    "owner" : {
+      "@id" : "http://purl.org/ontology/bibo/owner",
+      "@type" : "@id"
+    },
+    "ReferenceSource" : {
+      "@id" : "http://purl.org/ontology/bibo/ReferenceSource"
+    },
+    "member" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#member",
+      "@type" : "@id"
+    },
+    "semanticRelation" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#semanticRelation",
+      "@type" : "@id"
+    },
+    "DocumentPart" : {
+      "@id" : "http://purl.org/ontology/bibo/DocumentPart"
+    },
+    "XMLLiteral" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+    },
+    "Software" : {
+      "@id" : "http://purl.org/dc/dcmitype/Software"
+    },
+    "EditedBook" : {
+      "@id" : "http://purl.org/ontology/bibo/EditedBook"
+    },
+    "handle" : {
+      "@id" : "http://purl.org/ontology/bibo/handle",
+      "@type" : "@id"
+    },
+    "Webpage" : {
+      "@id" : "http://purl.org/ontology/bibo/Webpage"
+    },
+    "degree" : {
+      "@id" : "http://purl.org/ontology/bibo/degree",
+      "@type" : "@id"
+    },
+    "pageStart" : {
+      "@id" : "http://purl.org/ontology/bibo/pageStart",
+      "@type" : "@id"
+    },
+    "e142d77f89e56075a61e63ee629b7" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/036e142d77f89e56075a61e63ee629b7"
+    },
+    "Dataset" : {
+      "@id" : "https://w3id.org/dsv-ontology#Dataset"
+    },
+    "d732b98dcab521ba18f344351eb" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/60889d732b98dcab521ba18f344351eb"
+    },
+    "Email" : {
+      "@id" : "http://purl.org/ontology/bibo/Email"
+    },
+    "AudioVisualDocument" : {
+      "@id" : "http://purl.org/ontology/bibo/AudioVisualDocument"
+    },
+    "suffixName" : {
+      "@id" : "http://purl.org/ontology/bibo/suffixName",
+      "@type" : "@id"
+    },
+    "f4641a252eaf5557ecfc423c94aae79" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/5f4641a252eaf5557ecfc423c94aae79"
+    },
+    "court" : {
+      "@id" : "http://purl.org/ontology/bibo/court",
+      "@type" : "@id"
+    },
+    "InteractiveResource" : {
+      "@id" : "http://purl.org/dc/dcmitype/InteractiveResource"
+    },
+    "pageEnd" : {
+      "@id" : "http://purl.org/ontology/bibo/pageEnd",
+      "@type" : "@id"
+    },
+    "Organization" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Organization"
+    },
+    "eef22844c1cde35afb103fc5432ad27" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/0eef22844c1cde35afb103fc5432ad27"
+    },
+    "d214cce2dc6aaa1c9ac63802190c9" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/770d214cce2dc6aaa1c9ac63802190c9"
+    },
+    "a9caf30b5383859236112654bc38d682" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/a9caf30b5383859236112654bc38d682"
+    },
+    "OrderedCollection" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#OrderedCollection"
+    },
+    "issue" : {
+      "@id" : "http://purl.org/ontology/bibo/issue",
+      "@type" : "@id"
+    },
+    "Proceedings" : {
+      "@id" : "http://purl.org/ontology/bibo/Proceedings"
+    },
+    "f5f76f76d772e1250b91da8fba47f43" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/3f5f76f76d772e1250b91da8fba47f43"
+    },
+    "locator" : {
+      "@id" : "http://purl.org/ontology/bibo/locator",
+      "@type" : "@id"
+    },
+    "Note" : {
+      "@id" : "http://purl.org/ontology/bibo/Note"
+    },
+    "statisticalDataType" : {
+      "@id" : "https://w3id.org/dsv-ontology#statisticalDataType",
+      "@type" : "@id"
+    },
+    "pages" : {
+      "@id" : "http://purl.org/ontology/bibo/pages",
+      "@type" : "@id"
+    },
+    "sici" : {
+      "@id" : "http://purl.org/ontology/bibo/sici",
+      "@type" : "@id"
+    },
+    "a42f65f5a11da4a8a44c705e73557" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/758a42f65f5a11da4a8a44c705e73557"
+    },
+    "cecdc9ef2d096383628716496ec2bc3" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/2cecdc9ef2d096383628716496ec2bc3"
+    },
+    "Workshop" : {
+      "@id" : "http://purl.org/ontology/bibo/Workshop"
+    },
+    "OrdinalDataType" : {
+      "@id" : "https://w3id.org/dsv-ontology#OrdinalDataType"
+    },
+    "Alt" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"
+    },
+    "Map" : {
+      "@id" : "http://purl.org/ontology/bibo/Map"
+    },
+    "f41038baba8fb464c3017afcc225" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/3536f41038baba8fb464c3017afcc225"
+    },
+    "eissn" : {
+      "@id" : "http://purl.org/ontology/bibo/eissn",
+      "@type" : "@id"
+    },
+    "SoftwareApplication" : {
+      "@id" : "https://schema.org/SoftwareApplication"
+    },
+    "reproducedIn" : {
+      "@id" : "http://purl.org/ontology/bibo/reproducedIn",
+      "@type" : "@id"
+    },
+    "SummaryStatistics" : {
+      "@id" : "https://w3id.org/dsv-ontology#SummaryStatistics"
+    },
+    "datasetCompleteness" : {
+      "@id" : "https://w3id.org/dsv-ontology#datasetCompleteness"
+    },
+    "NotebookApplication" : {
+      "@id" : "https://w3id.org/software-types#NotebookApplication"
+    },
+    "director" : {
+      "@id" : "http://purl.org/ontology/bibo/director",
+      "@type" : "@id"
+    },
+    "issuer" : {
+      "@id" : "http://purl.org/ontology/bibo/issuer",
+      "@type" : "@id"
+    },
+    "research-software" : {
+      "@id" : "https://terms.codata.org/rdmt/research-software"
+    },
+    "Bag" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    },
+    "Statement" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "doi" : {
+      "@id" : "http://purl.org/ontology/bibo/doi",
+      "@type" : "@id"
+    },
+    "Sound" : {
+      "@id" : "http://purl.org/dc/dcmitype/Sound"
+    },
+    "c34a9d12d29704d81f0971a891915f1" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/9c34a9d12d29704d81f0971a891915f1"
+    },
+    "hasCodeBook" : {
+      "@id" : "https://w3id.org/dsv-ontology#hasCodeBook",
+      "@type" : "@id"
+    },
+    "reviewOf" : {
+      "@id" : "http://purl.org/ontology/bibo/reviewOf"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "recipient" : {
+      "@id" : "http://purl.org/ontology/bibo/recipient",
+      "@type" : "@id"
+    },
+    "uri" : {
+      "@id" : "http://purl.org/ontology/bibo/uri",
+      "@type" : "@id"
+    },
+    "reversedBy" : {
+      "@id" : "http://purl.org/ontology/bibo/reversedBy",
+      "@type" : "@id"
+    },
+    "Bill" : {
+      "@id" : "http://purl.org/ontology/bibo/Bill"
+    },
+    "affirmedBy" : {
+      "@id" : "http://purl.org/ontology/bibo/affirmedBy",
+      "@type" : "@id"
+    },
+    "presents" : {
+      "@id" : "http://purl.org/ontology/bibo/presents",
+      "@type" : "@id"
+    },
+    "DOI" : {
+      "@id" : "http://purl.org/ontology/bibo/DOI"
+    },
+    "cf0da10ec66d815bbee517d484c3bdce" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/cf0da10ec66d815bbee517d484c3bdce"
+    },
+    "LegalCaseDocument" : {
+      "@id" : "http://purl.org/ontology/bibo/LegalCaseDocument"
+    },
+    "interviewee" : {
+      "@id" : "http://purl.org/ontology/bibo/interviewee",
+      "@type" : "@id"
+    },
+    "transcriptOf" : {
+      "@id" : "http://purl.org/ontology/bibo/transcriptOf"
+    },
+    "interviewer" : {
+      "@id" : "http://purl.org/ontology/bibo/interviewer",
+      "@type" : "@id"
+    },
+    "orcid" : {
+      "@id" : "https://terms.codata.org/rdmt/orcid"
+    },
+    "Chapter" : {
+      "@id" : "http://purl.org/ontology/bibo/Chapter"
+    },
+    "LegalDocument" : {
+      "@id" : "http://purl.org/ontology/bibo/LegalDocument"
+    },
+    "citedBy" : {
+      "@id" : "http://purl.org/ontology/bibo/citedBy",
+      "@type" : "@id"
+    },
+    "DatasetSchema" : {
+      "@id" : "https://w3id.org/dsv-ontology#DatasetSchema"
+    },
+    "d6975da38795dfc97fb918c4f50ed9fd" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/d6975da38795dfc97fb918c4f50ed9fd"
+    },
+    "Performance" : {
+      "@id" : "http://purl.org/ontology/bibo/Performance"
+    },
+    "Specification" : {
+      "@id" : "http://purl.org/ontology/bibo/Specification"
+    },
+    "AcademicArticle" : {
+      "@id" : "http://purl.org/ontology/bibo/AcademicArticle"
+    },
+    "Event" : {
+      "@id" : "http://purl.org/NET/c4dm/event.owl#Event"
+    },
+    "af27ce8ae95c722d50ccb64354ee" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/5906af27ce8ae95c722d50ccb64354ee"
+    },
+    "columnCompleteness" : {
+      "@id" : "https://w3id.org/dsv-ontology#columnCompleteness"
+    },
+    "CollectedDocument" : {
+      "@id" : "http://purl.org/ontology/bibo/CollectedDocument"
+    },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
+    "presentedAt" : {
+      "@id" : "http://purl.org/ontology/bibo/presentedAt",
+      "@type" : "@id"
+    },
+    "ceff99c4eefc475f78a1b8a64c7b1d27" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/ceff99c4eefc475f78a1b8a64c7b1d27"
+    },
+    "WebApplication" : {
+      "@id" : "https://schema.org/WebApplication"
+    },
+    "SoftwareImage" : {
+      "@id" : "https://w3id.org/software-types#SoftwareImage"
+    },
+    "Patent" : {
+      "@id" : "http://purl.org/ontology/bibo/Patent"
+    },
+    "MovingImage" : {
+      "@id" : "http://purl.org/dc/dcmitype/MovingImage"
+    },
+    "Report" : {
+      "@id" : "http://purl.org/ontology/bibo/Report"
+    },
+    "c4024d289d75f77276d2466437b85" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/676c4024d289d75f77276d2466437b85"
+    },
+    "cce779e6db8e4fa61cc379a2d078bcc" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/8cce779e6db8e4fa61cc379a2d078bcc"
+    },
+    "Book" : {
+      "@id" : "http://purl.org/ontology/bibo/Book"
+    },
+    "Agent" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Agent",
+      "@type" : "@id"
+    },
+    "eanucc13" : {
+      "@id" : "http://purl.org/ontology/bibo/eanucc13",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "Legislation" : {
+      "@id" : "http://purl.org/ontology/bibo/Legislation"
+    },
+    "Slide" : {
+      "@id" : "http://purl.org/ontology/bibo/Slide"
+    },
+    "prefixName" : {
+      "@id" : "http://purl.org/ontology/bibo/prefixName",
+      "@type" : "@id"
+    },
+    "d4b42b80e33dcc592390" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/968675397643d4b42b80e33dcc592390"
+    },
+    "Article" : {
+      "@id" : "http://purl.org/ontology/bibo/Article"
+    },
+    "section" : {
+      "@id" : "http://purl.org/ontology/bibo/section",
+      "@type" : "@id"
+    },
+    "translator" : {
+      "@id" : "http://purl.org/ontology/bibo/translator",
+      "@type" : "@id"
+    },
+    "Brief" : {
+      "@id" : "http://purl.org/ontology/bibo/Brief"
+    },
+    "f3567bf9831adeff15fbdeaaea9671a" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/4f3567bf9831adeff15fbdeaaea9671a"
+    },
+    "d0884cd5685accbed5b259eda14" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/62146d0884cd5685accbed5b259eda14"
+    },
+    "Manuscript" : {
+      "@id" : "http://purl.org/ontology/bibo/Manuscript"
+    },
+    "Website" : {
+      "@id" : "http://purl.org/ontology/bibo/Website"
+    },
+    "subsequentLegalDecision" : {
+      "@id" : "http://purl.org/ontology/bibo/subsequentLegalDecision",
+      "@type" : "@id"
+    },
+    "d62582fccd3483d84c2fcfede78c861" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/9d62582fccd3483d84c2fcfede78c861"
+    },
+    "d5f1ec413fdbeb42c9d7e144e538e24" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/1d5f1ec413fdbeb42c9d7e144e538e24"
+    },
+    "ComponentSpecification" : {
+      "@id" : "http://purl.org/linked-data/cube#ComponentSpecification"
+    },
+    "organizer" : {
+      "@id" : "http://purl.org/ontology/bibo/organizer",
+      "@type" : "@id"
+    },
+    "Issue" : {
+      "@id" : "http://purl.org/ontology/bibo/Issue"
+    },
+    "TechnologyReadinessLevel" : {
+      "@id" : "https://w3id.org/research-technology-readiness-levels#TechnologyReadinessLevel"
+    },
+    "add4600741a28d402f7f134363" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/053615add4600741a28d402f7f134363"
+    },
+    "status" : {
+      "@id" : "http://purl.org/ontology/bibo/status",
+      "@type" : "@id"
+    },
+    "shortDescription" : {
+      "@id" : "http://purl.org/ontology/bibo/shortDescription",
+      "@type" : "@id"
+    },
+    "Container" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Container"
+    },
+    "DimensionProperty" : {
+      "@id" : "http://purl.org/linked-data/cube#DimensionProperty"
+    },
+    "a4fec83beeaac7106f9456b1ffeeabde" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/a4fec83beeaac7106f9456b1ffeeabde"
+    },
+    "DataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#DataProperty"
+    },
+    "producer" : {
+      "@id" : "http://purl.org/ontology/bibo/producer",
+      "@type" : "@id"
+    },
+    "identifier" : {
+      "@id" : "http://purl.org/ontology/bibo/identifier",
+      "@type" : "@id"
+    },
+    "bcf4b0f1fc5c9c61f849db9c2e283" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/494bcf4b0f1fc5c9c61f849db9c2e283"
+    },
+    "number" : {
+      "@id" : "http://purl.org/ontology/bibo/number",
+      "@type" : "@id"
+    },
+    "coden" : {
+      "@id" : "http://purl.org/ontology/bibo/coden",
+      "@type" : "@id"
+    },
+    "subject" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"
+    },
+    "numberOfRows" : {
+      "@id" : "https://w3id.org/dsv-ontology#numberOfRows"
+    },
+    "upc" : {
+      "@id" : "http://purl.org/ontology/bibo/upc",
+      "@type" : "@id"
+    },
+    "Standard" : {
+      "@id" : "http://purl.org/ontology/bibo/Standard"
+    },
+    "fe0d50829dcd860324e86f9efd0b6" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/247fe0d50829dcd860324e86f9efd0b6"
+    },
+    "memberList" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#memberList"
+    },
+    "hasVariable" : {
+      "@id" : "https://w3id.org/dsv-ontology#hasVariable",
+      "@type" : "@id"
+    },
+    "Seq" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"
+    },
+    "f7f265d02fed0195f853df0fbc83e185" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/f7f265d02fed0195f853df0fbc83e185"
+    },
+    "content" : {
+      "@id" : "http://purl.org/ontology/bibo/content",
+      "@type" : "@id"
+    },
+    "ServerApplication" : {
+      "@id" : "file:/home/ahmad/repos/firmao%40gmail.com/docs/ServerApplication"
+    },
+    "BookSection" : {
+      "@id" : "http://purl.org/ontology/bibo/BookSection"
+    },
+    "gtin14" : {
+      "@id" : "http://purl.org/ontology/bibo/gtin14",
+      "@type" : "@id"
+    },
+    "a85f25f01d8da607826834881cd468" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/37a85f25f01d8da607826834881cd468"
+    },
+    "c7850542b0da4792c6b8d7063269e" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/902c7850542b0da4792c6b8d7063269e"
+    },
+    "Slideshow" : {
+      "@id" : "http://purl.org/ontology/bibo/Slideshow"
+    },
+    "ec0450ade806dbb1beb1aea8eeff4" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/136ec0450ade806dbb1beb1aea8eeff4"
+    },
+    "authorList" : {
+      "@id" : "http://purl.org/ontology/bibo/authorList",
+      "@type" : "@id"
+    },
+    "SoftwarePackage" : {
+      "@id" : "https://w3id.org/software-types#SoftwarePackage"
+    },
+    "SoftwareSourceCode" : {
+      "@id" : "https://schema.org/SoftwareSourceCode"
+    },
+    "CourtReporter" : {
+      "@id" : "http://purl.org/ontology/bibo/CourtReporter"
+    },
+    "Manual" : {
+      "@id" : "http://purl.org/ontology/bibo/Manual"
+    },
+    "LegalDecision" : {
+      "@id" : "http://purl.org/ontology/bibo/LegalDecision"
+    },
+    "TableSchema" : {
+      "@id" : "http://www.w3.org/ns/csvw#TableSchema"
+    },
+    "PersonalCommunicationDocument" : {
+      "@id" : "http://purl.org/ontology/bibo/PersonalCommunicationDocument"
+    },
+    "Interview" : {
+      "@id" : "http://purl.org/ontology/bibo/Interview"
+    },
+    "DesktopApplication" : {
+      "@id" : "https://w3id.org/software-types#DesktopApplication"
+    },
+    "ConceptScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    },
+    "column" : {
+      "@id" : "https://w3id.org/dsv-ontology#column",
+      "@type" : "@id"
+    },
+    "Property" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    },
+    "columnProperty" : {
+      "@id" : "https://w3id.org/dsv-ontology#columnProperty",
+      "@type" : "@id"
+    },
+    "Column" : {
+      "@id" : "https://w3id.org/dsv-ontology#Column"
+    },
+    "data-paper" : {
+      "@id" : "https://terms.codata.org/rdmt/data-paper"
+    },
+    "DocumentStatus" : {
+      "@id" : "http://purl.org/ontology/bibo/DocumentStatus"
+    },
+    "d4b75bdb7e1672bcdfa7c80f081dce0" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/3d4b75bdb7e1672bcdfa7c80f081dce0"
+    },
+    "issn" : {
+      "@id" : "http://purl.org/ontology/bibo/issn",
+      "@type" : "@id"
+    },
+    "a6a02529a2feb5b30434cdb73be710" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/46a6a02529a2feb5b30434cdb73be710"
+    },
+    "edition" : {
+      "@id" : "http://purl.org/ontology/bibo/edition",
+      "@type" : "@id"
+    },
+    "ThesisDegree" : {
+      "@id" : "http://purl.org/ontology/bibo/ThesisDegree"
+    },
+    "Film" : {
+      "@id" : "http://purl.org/ontology/bibo/Film"
+    },
+    "d13eb4a5f8c934ba66553801346ab9" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/49d13eb4a5f8c934ba66553801346ab9"
+    },
+    "abfc3eefd7fd63d10d248fb8796af" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/537abfc3eefd7fd63d10d248fb8796af"
+    },
+    "hasCategories" : {
+      "@id" : "https://w3id.org/dsv-ontology#hasCategories"
+    },
+    "Excerpt" : {
+      "@id" : "http://purl.org/ontology/bibo/Excerpt"
+    },
+    "numPages" : {
+      "@id" : "http://purl.org/ontology/bibo/numPages",
+      "@type" : "@id"
+    },
+    "datasetSchema" : {
+      "@id" : "https://w3id.org/dsv-ontology#datasetSchema",
+      "@type" : "@id"
+    },
+    "SoftwareLibrary" : {
+      "@id" : "https://w3id.org/software-types#SoftwareLibrary"
+    },
+    "Thesis" : {
+      "@id" : "http://purl.org/ontology/bibo/Thesis"
+    },
+    "oclcnum" : {
+      "@id" : "http://purl.org/ontology/bibo/oclcnum",
+      "@type" : "@id"
+    },
+    "predicate" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"
+    },
+    "volume" : {
+      "@id" : "http://purl.org/ontology/bibo/volume",
+      "@type" : "@id"
+    },
+    "d3968f26dc8387ae782cd3bba0f5058b" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/d3968f26dc8387ae782cd3bba0f5058b"
+    },
+    "topConceptOf" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
+      "@type" : "@id"
+    },
+    "distributor" : {
+      "@id" : "http://purl.org/ontology/bibo/distributor",
+      "@type" : "@id"
+    },
+    "Author" : {
+      "@id" : "https://schema.org/Author"
+    },
+    "ba9592ec93a0abee1f4a09aea17d" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/5634ba9592ec93a0abee1f4a09aea17d"
+    },
+    "Series" : {
+      "@id" : "http://purl.org/ontology/bibo/Series"
+    },
+    "Text" : {
+      "@id" : "http://purl.org/dc/dcmitype/Text"
+    },
+    "Periodical" : {
+      "@id" : "http://purl.org/ontology/bibo/Periodical"
+    },
+    "f2b75648d2025e8468309296782e4185" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/f2b75648d2025e8468309296782e4185"
+    },
+    "StillImage" : {
+      "@id" : "http://purl.org/dc/dcmitype/StillImage"
+    },
+    "Newspaper" : {
+      "@id" : "http://purl.org/ontology/bibo/Newspaper"
+    },
+    "shortTitle" : {
+      "@id" : "http://purl.org/ontology/bibo/shortTitle",
+      "@type" : "@id"
+    },
+    "IntervalDataType" : {
+      "@id" : "https://w3id.org/dsv-ontology#IntervalDataType"
+    },
+    "PersonalCommunication" : {
+      "@id" : "http://purl.org/ontology/bibo/PersonalCommunication"
+    },
+    "cites" : {
+      "@id" : "http://purl.org/ontology/bibo/cites",
+      "@type" : "@id"
+    },
+    "Resource" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+    },
+    "f99e7afff964a74071bf07217949dcab" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/f99e7afff964a74071bf07217949dcab"
+    },
+    "AudioDocument" : {
+      "@id" : "http://purl.org/ontology/bibo/AudioDocument"
+    },
+    "translationOf" : {
+      "@id" : "http://purl.org/ontology/bibo/translationOf",
+      "@type" : "@id"
+    },
+    "ColumnProperty" : {
+      "@id" : "https://w3id.org/dsv-ontology#ColumnProperty"
+    },
+    "d883253a03970487532e862b24a8146" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/2d883253a03970487532e862b24a8146"
+    },
+    "b8c6a1302aef8cd14d007ef9607a53" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/45b8c6a1302aef8cd14d007ef9607a53"
+    },
+    "annotates" : {
+      "@id" : "http://purl.org/ontology/bibo/annotates"
+    },
+    "DataSet" : {
+      "@id" : "http://purl.org/linked-data/cube#DataSet"
+    },
+    "chapter" : {
+      "@id" : "http://purl.org/ontology/bibo/chapter",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Service" : {
+      "@id" : "http://purl.org/dc/dcmitype/Service"
+    },
+    "Image" : {
+      "@id" : "http://purl.org/dc/dcmitype/Image"
+    },
+    "af8feb069f9b6fa724186de955be4db5" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/af8feb069f9b6fa724186de955be4db5"
+    },
+    "Document" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Document"
+    },
+    "Code" : {
+      "@id" : "http://purl.org/ontology/bibo/Code"
+    },
+    "bee1b333d02114e7e72ac7771e7b98" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/52bee1b333d02114e7e72ac7771e7b98"
+    },
+    "Hearing" : {
+      "@id" : "http://purl.org/ontology/bibo/Hearing"
+    },
+    "argued" : {
+      "@id" : "http://purl.org/ontology/bibo/argued",
+      "@type" : "@id"
+    },
+    "c8d4e73d51b9e32556c09f4559d0618" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/7c8d4e73d51b9e32556c09f4559d0618"
+    },
+    "RatioDataType" : {
+      "@id" : "https://w3id.org/dsv-ontology#RatioDataType"
+    },
+    "Table" : {
+      "@id" : "http://www.w3.org/ns/csvw#Table"
+    },
+    "numberOfColumns" : {
+      "@id" : "https://w3id.org/dsv-ontology#numberOfColumns"
+    },
+    "b6ad0a58a1dabd9733a4ceb1b8c49159" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/b6ad0a58a1dabd9733a4ceb1b8c49159"
+    },
+    "asin" : {
+      "@id" : "http://purl.org/ontology/bibo/asin",
+      "@type" : "@id"
+    },
+    "editorList" : {
+      "@id" : "http://purl.org/ontology/bibo/editorList",
+      "@type" : "@id"
+    },
+    "Conference" : {
+      "@id" : "http://purl.org/ontology/bibo/Conference"
+    },
+    "Journal" : {
+      "@id" : "http://purl.org/ontology/bibo/Journal"
+    },
+    "pmid" : {
+      "@id" : "http://purl.org/ontology/bibo/pmid",
+      "@type" : "@id"
+    },
+    "Literal" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "hasTopConcept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+      "@type" : "@id"
+    },
+    "numVolumes" : {
+      "@id" : "http://purl.org/ontology/bibo/numVolumes",
+      "@type" : "@id"
+    },
+    "TerminalApplication" : {
+      "@id" : "https://w3id.org/software-types#TerminalApplication"
+    },
+    "isbn10" : {
+      "@id" : "http://purl.org/ontology/bibo/isbn10",
+      "@type" : "@id"
+    },
+    "NumericalDataType" : {
+      "@id" : "https://w3id.org/dsv-ontology#NumericalDataType"
+    },
+    "inScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type" : "@id"
+    },
+    "NominalDataType" : {
+      "@id" : "https://w3id.org/dsv-ontology#NominalDataType"
+    },
+    "a598345f632bd39cbd7ceae13e02c7" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/35a598345f632bd39cbd7ceae13e02c7"
+    },
+    "lccn" : {
+      "@id" : "http://purl.org/ontology/bibo/lccn",
+      "@type" : "@id"
+    },
+    "missingValueFormat" : {
+      "@id" : "https://w3id.org/dsv-ontology#missingValueFormat"
+    },
+    "CommandLineApplication" : {
+      "@id" : "https://w3id.org/software-types#CommandLineApplication"
+    },
+    "PhysicalObject" : {
+      "@id" : "http://purl.org/dc/dcmitype/PhysicalObject"
+    },
+    "db448cb1380d7209306cc404fab5fe" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/43db448cb1380d7209306cc404fab5fe"
+    },
+    "ff4761dc59a5fb4605b1a9479a5898f4" : {
+      "@id" : "https://kg.odissei.nl/.well-known/genid/ff4761dc59a5fb4605b1a9479a5898f4"
+    },
+    "Statute" : {
+      "@id" : "http://purl.org/ontology/bibo/Statute"
+    },
+    "contributorList" : {
+      "@id" : "http://purl.org/ontology/bibo/contributorList",
+      "@type" : "@id"
+    },
+    "DataStructureDefinition" : {
+      "@id" : "http://purl.org/linked-data/cube#DataStructureDefinition"
+    },
+    "Collection" : {
+      "@id" : "http://purl.org/ontology/bibo/Collection"
+    },
+    "performer" : {
+      "@id" : "http://purl.org/ontology/bibo/performer",
+      "@type" : "@id"
+    },
+    "editor" : {
+      "@id" : "http://purl.org/ontology/bibo/editor",
+      "@type" : "@id"
+    },
+    "Letter" : {
+      "@id" : "http://purl.org/ontology/bibo/Letter"
+    },
+    "Quote" : {
+      "@id" : "http://purl.org/ontology/bibo/Quote"
+    },
+    "ContainerMembershipProperty" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"
+    },
+    "isbn13" : {
+      "@id" : "http://purl.org/ontology/bibo/isbn13",
+      "@type" : "@id"
+    }
+  }
+}

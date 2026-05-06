@@ -1,0 +1,82 @@
+{
+  "@context" : {
+    "ResearchProject" : {
+      "@id" : "https://schema.org/ResearchProject"
+    },
+    "Software" : {
+      "@id" : "http://purl.org/dc/dcmitype/Software"
+    },
+    "Dataset" : {
+      "@id" : "http://purl.org/dc/dcmitype/Dataset"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "OrderedCollection" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#OrderedCollection"
+    },
+    "Class" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Class"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "AcademicArticle" : {
+      "@id" : "http://purl.org/ontology/bibo/AcademicArticle"
+    },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
+    "SoftwareImage" : {
+      "@id" : "https://w3id.org/software-types#SoftwareImage"
+    },
+    "Article" : {
+      "@id" : "http://purl.org/ontology/bibo/Article"
+    },
+    "TechnologyReadinessLevel" : {
+      "@id" : "https://w3id.org/research-technology-readiness-levels#TechnologyReadinessLevel"
+    },
+    "DataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#DataProperty"
+    },
+    "ServerApplication" : {
+      "@id" : "https://w3id.org/software-types#ServerApplication"
+    },
+    "Datatype" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Datatype"
+    },
+    "SoftwareSourceCode" : {
+      "@id" : "https://schema.org/SoftwareSourceCode"
+    },
+    "DesktopApplication" : {
+      "@id" : "https://w3id.org/software-types#DesktopApplication"
+    },
+    "ConceptScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    },
+    "Property" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    },
+    "DocumentStatus" : {
+      "@id" : "http://purl.org/ontology/bibo/DocumentStatus"
+    },
+    "ThesisDegree" : {
+      "@id" : "http://purl.org/ontology/bibo/ThesisDegree"
+    },
+    "List" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
+    },
+    "SoftwareLibrary" : {
+      "@id" : "https://w3id.org/software-types#SoftwareLibrary"
+    },
+    "Resource" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+    },
+    "CommandLineApplication" : {
+      "@id" : "https://w3id.org/software-types#CommandLineApplication"
+    }
+  }
+}
